@@ -17,9 +17,9 @@ def create_app():
     routes.init_app(app)
 
     # 配置首页路由
-    @app.route('/', methods=['GET'])
-    def index():
-        return render_template('index.html')
+    @app.route('/error', methods=['GET'])
+    def error():
+        return render_template('error.html')
 
     return app
 
